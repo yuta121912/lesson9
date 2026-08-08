@@ -13,8 +13,9 @@ if ('user_name' in st.session_state and st.session_state.user_name):
            for hobby in st.session_state.hobbies:
              st.write(f"• {hobby}")
         else:
-           st.write("**趣味:** 未設定")
-           st.balloons()
+           st.write("")
+   st.balloons()
+          
 else:
     st.error(" ユーザー情報が設定されていません")
     st.write("メインページで情報を入力してください")
